@@ -2,10 +2,10 @@
 # Linear Regression의 개념
 
 아래와 같은 data가 있다고 해보자.  
-<left><img src="image/hypothesis.png" width="400" height="300"></left>
+<left><img src="image/regression_data.png" width="400" height="300"></left>
 
 그럼 이 data에 대한 가설(H(x))은 다음과 같을 것이다.  
-<left><img src="image/regression_data.png" width="400" height="300"></left>
+<left><img src="image/hypothesis.png" width="400" height="300"></left>
 
 이 데이터에 대한 그래프와 식은 다음과 같을 것이다.  
 그리고 다른 데이터들에 대한 식은 노란색과 빨간색 선들이라고 해보자.  

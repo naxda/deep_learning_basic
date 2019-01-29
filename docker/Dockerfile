@@ -8,7 +8,7 @@ RUN apt-get install -y git unzip
 RUN apt-get install -y wget
 RUN apt-get install -y build-essential
 
-# install python3.6
+# install python3.6, BeutifulSoup4 package
 # for use "add-apt-repository command"
 RUN apt-get install -y software-properties-common
 RUN add-apt-repository ppa:jonathonf/python-3.6
@@ -27,7 +27,6 @@ RUN pip3 install pip -U \
     && pip3 install jupyter_contrib_nbextensions \
     && rm -r /root/.cache/pip
 RUN jupyter contrib nbextension install
-# CMD jupyter-notebook --ip="*" --no-browser
 
 # Set environment variables
 # UBUNTU korean locale
@@ -37,11 +36,16 @@ ENV LANG=ko_KR.UTF-8
 RUN locale-gen ko_KR.UTF-8
 ENV LC_ALL ko_KR.UTF-8
 
+# make shared directory with HOST and set working directory
 RUN mkdir -p /workdir/build
-
 VOLUME /workdir/deeplearning_keras_study
+<<<<<<< HEAD
 
 WORKDIR /workdir
+=======
+VOLUME /workdir/study
+WORKDIR /workdir/study
+>>>>>>> 4493def2ee4b37107d0ba533d536f1625c39d3d1
 
 # Set up our notebook config.
 COPY jupyter_notebook_config.py /root/.jupyter/

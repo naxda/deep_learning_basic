@@ -40,9 +40,8 @@ ENV LC_ALL ko_KR.UTF-8
 RUN mkdir -p /workdir/build
 
 VOLUME /workdir/deeplearning_keras_study
-VOLUME /workdir/build
 
-WORKDIR /workdir/build
+WORKDIR /workdir
 
 # Set up our notebook config.
 COPY jupyter_notebook_config.py /root/.jupyter/

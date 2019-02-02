@@ -48,7 +48,6 @@ RUN locale-gen ko_KR.UTF-8
 ENV LC_ALL ko_KR.UTF-8
 
 # make shared directory with HOST and set working directory
-RUN mkdir -p /workdir/build
 VOLUME /workdir/deeplearning_keras_study
 
 WORKDIR /workdir

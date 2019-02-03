@@ -1,4 +1,5 @@
 # Docker build  
+ - cd docker  
  - docker build -t deeplearning_keras:imx-1 .
   
 # Run Docker container 

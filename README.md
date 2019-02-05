@@ -9,3 +9,5 @@
 # execute jupyter notebook in Docker Container
   - /workdir/run_jupyter.sh --allow-root &
 
+# 특이점
+  - ubuntu에서 docker build시에 plotly 패키지를 설치하면서 error가 발생해서 repository를 통해서 설치하도록 수정했다.

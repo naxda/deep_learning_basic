@@ -14,7 +14,7 @@ RUN apt-get install -y software-properties-common
 RUN add-apt-repository ppa:jonathonf/python-3.6
 # RUN add-apt-repository ppa:deadsnakes/ppa
 RUN apt-get update
-RUN apt-get install -y python3.6
+# RUN apt-get install -y python3.6
 RUN apt-get install -y python3.6-dev
 RUN apt-get install -y python3-pip
 RUN pip3 install --upgrade pip
@@ -34,6 +34,10 @@ RUN pip3 install tensorflow scikit-learn jupyter matplotlib pandas keras seaborn
 
 # # Install numpy, scipy, matplotlib
 RUN pip3 install numpy scipy pyyaml
+
+RUN pip3 uninstall -y tornado
+RUN pip3 install tornado==5.1.1
+# RUN pip3 install tornado
 
 # Set environment variables
 # UBUNTU korean locale

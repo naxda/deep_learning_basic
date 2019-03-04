@@ -25,20 +25,15 @@ RUN apt-get install -y python3-bs4
 RUN apt-get install -y build-essential \
 cmake git unzip pkg-config libopenblas-dev liblapack-dev
 
-# # Install numpy, scipy, matplotlib
-RUN apt-get install -y python-numpy \
-python-scipy python-matplotlib python-yaml
-
 # Install HDF5(대용량 수치 데이터파일을 효율적인 이진포맷으로 저장해준다.)
 RUN apt-get install -y libhdf5-serial-dev python-h5py
-
-# Install packages for visualizing keras model(Graphviz, pydot-ng)
-# RUN apt-get install -y graphviz
-# RUN apt-get install -y pydot-ng
 
 # for jupyter, tensorflow, keras package
 # RUN pip3 install tensorflow scikit-learn jupyter matplotlib pandas keras seaborn plotly
 RUN pip3 install tensorflow scikit-learn jupyter matplotlib pandas keras seaborn
+
+# # Install numpy, scipy, matplotlib
+RUN pip3 install numpy scipy pyyaml
 
 # Set environment variables
 # UBUNTU korean locale

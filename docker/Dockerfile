@@ -39,6 +39,9 @@ RUN pip3 uninstall -y tornado
 RUN pip3 install tornado==5.1.1
 # RUN pip3 install tornado
 
+RUN pip3 uninstall -y pillow
+RUN pip3 install pillow
+
 # Set environment variables
 # UBUNTU korean locale
 RUN apt-get install -y locales

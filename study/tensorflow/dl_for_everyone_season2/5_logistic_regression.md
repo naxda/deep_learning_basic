@@ -29,6 +29,9 @@ logistic regression은 선형적인 값에 대한 예측을 하기위한 모델�
   이 경우, 두 그룹 간의 직선(또는 곡선)이 Hypothesis가 되는데, 
   이는 이전 챕터에서 배웠던 것과 같이 가설(Hypothesis)과 실제 데이터(y) 간의 거리를 구하는 cost 함수를 사용해서 cost를 최소화되는 곡선을 찾고, 이 결과로 분류가 가능하다.
   <img src="./img/hypothesis_representation1.png" width="80%">
+  <img src="./img/logistic_regression_cost_function.png" width="80%">
+
+  
 
 - 일정 수치 이상일 경우 True/False를 판단하는 모델
   예를 들어 y = x+b의 직선이 있고 이 직선은 공부시간(x)에 대한 시험성적(y)에 대한 직선이라고 해보자.
@@ -36,6 +39,7 @@ logistic regression은 선형적인 값에 대한 예측을 하기위한 모델�
   시험 성적이 50이하일 경우, Fail, 50이상일 경우 Pass라고 하면, pass, fail을 표현하는 그래프는 아래와 같이 계단 모양이 될 것이다. 아래 그래프는 가설을 Sigmoid함수의 입력으로 주면 아래와 같은 그래프 형태가 된다.
 
   <img src="./img/hypothesis_representation2.png" width="80%">
+  <img src="./img/logistic_regression_cost_function2.png" width="80%">
 
   
 

@@ -60,3 +60,6 @@ logistic regression은 선형적인 값에 대한 예측을 하기위한 모델�
 ## Softmax classification
 
 Sigmoid 대신 Softmax를 사용하면 0또는 1로 분류하는 이진분류가 아닌 다수의 라벨로 분류할 수 있다.
+
+<img src="./img/logistic_regression_softmax.png" width="80%">
+

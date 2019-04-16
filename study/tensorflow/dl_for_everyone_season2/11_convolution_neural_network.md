@@ -81,6 +81,5 @@ Fully Connected layer에서는 Conv와 Max layer들을 통해서 나온 out map�
 <img src="./img/fully_connected_layer.jpg" width="50%">
 
 ## 그 외의 참고사항
- - CNN에서 layer의 갯수에 FC는 포함되지 않는다.  보통 layer의 갯수는 Conv layer의 갯수를 말한다.  
  - 아래 링크에서 이미지의 특징들이 어떻게 출력되는지 과정을 살펴볼 수 있다.  
     http://cs.stanford.edu/people/karpathy/convnetjs/demo/cifar10.html

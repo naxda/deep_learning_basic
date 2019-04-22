@@ -17,9 +17,9 @@ logistic regression은 선형적인 값에 대한 예측을 하기위한 모델�
 <img src="./img/logistic_vs_linear.png" width="80%">  
   
 ## Hypothesis  
-- 두 가지 경우로 나눌 수 있다.  
+### 두 가지 경우로 나눌 수 있다.  
   점들을 그룹들로 나누는 모델, 그래프에서 값이 일정 수치 이상일 경우 True/False(Pass/Fail)을 예측할 수 있는 모델로 나눌 수 있다.  
-
+----
 - 점들을 그룹으로 나누는 모델  
   위의 그림처럼 네모와 세모를 경계짓는 곡선들의 경우 Binary Regression을 통해 True/False 를 판단할 수 있다.  
   이 경우, 두 그룹 간의 직선(또는 곡선)이 Hypothesis가 되는데,  
@@ -34,7 +34,7 @@ logistic regression은 선형적인 값에 대한 예측을 하기위한 모델�
   <img src="./img/hypothesis_representation2.png" width="80%">
   <img src="./img/logistic_regression_cost_function2.png" width="80%">
   
-- 시험성적 뿐 아니라, 혈당 수치에 대한 당뇨 확률? 이건 너무 당연한 비유겠지만.. 또는 한달 평균 운동 시간에 대한 비만 확률? 같은 경우에도 사용할 수 있지 않을까..  
+시험성적 뿐 아니라, 혈당 수치에 대한 당뇨 확률? 이건 너무 당연한 비유겠지만.. 또는 한달 평균 운동 시간에 대한 비만 확률? 같은 경우에도 사용할 수 있지 않을까..  
 
 ## sigmoid function  
 슬라이드로 살펴보자..  
